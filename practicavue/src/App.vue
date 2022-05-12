@@ -1,25 +1,24 @@
 <template>
-  <div class="px-40 bg-red-300">
-    <img class="mx-auto" alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <MiComponente></MiComponente>
+  <div class="px-4 bg-page">
+    <Login></Login>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import MiComponente from './components/MiComponente.vue'
-import './assets/tailwind.css';
+import Login from "./components/login.vue";
+import "./assets/css/tailwind.css";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld,
-    MiComponente
-  }
-}
+    Login,
+  },
+};
 </script>
 
 <style>
-  @import './assets/css/styles.css';
+@import "./assets/css/styles.css";
+.bg-page {
+  background-image: url("~@/assets/images/fondo-vue.jpeg");
+}
 </style>
